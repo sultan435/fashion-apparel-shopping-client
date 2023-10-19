@@ -4,7 +4,7 @@ import Navbar from "../../Shared/Navbar/Navbar";
 
 const Header = () => {
     return (
-        <div className=" min-h-screen bg-no-repeat bg-cover bg-center" style={{backgroundImage: 'url(https://i.ibb.co/hMM1Wsv/slidev3-03.jpg)'}}>
+        <div className=" min-h-screen bg-no-repeat bg-cover bg-center text-black" style={{backgroundImage: 'url(https://i.ibb.co/7NjR6ky/Untitled-3-1.png)'}}>
             <Navbar></Navbar>
             <Banner></Banner>
         </div>
