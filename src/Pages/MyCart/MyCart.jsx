@@ -1,16 +1,9 @@
 import { useLoaderData } from "react-router-dom";
 import Navbar from "../../Shared/Navbar/Navbar";
 
-
-
-
 const MyCart = () => {
     
     const cartData = useLoaderData()
-    // console.log(cartData)
-    
-
-    
 
     return (
         <div>

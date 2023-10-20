@@ -63,7 +63,7 @@ const LogIn = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <div className="bg-[#111343] py-24 px-3">
+            <div className="bg-[#f2f2f2] py-24 px-3">
 
                 <div className="md:w-3/4 lg:w-1/2 mx-auto bg-white p-10 rounded-lg">
                     <div className="text-center mb-12">
@@ -104,7 +104,7 @@ const LogIn = () => {
                                 </label>
                             </div>
                             <div className="form-control">
-                                <button className="rounded-xl text-white text-xl font-medium bg-[#d628b6] py-3 px-6">LOGIN</button>
+                                <button className="rounded-xl text-white text-xl font-medium bg-[#ed4242] py-3 px-6">LOGIN</button>
                             </div>
 
                         </div>
@@ -122,7 +122,7 @@ const LogIn = () => {
                         </button>
                     </div>
 
-                    <p className="mt-7 text-center text-[#403F3F] font-semibold">Don’t Have An Account ? <Link className="text-[#d628b6]" to="/register">Register</Link></p>
+                    <p className="mt-7 text-center text-[#403F3F] font-semibold">Don’t Have An Account ? <Link className="text-[#ed4242]" to="/register">Register</Link></p>
                 </div>
             </div>
         </div>

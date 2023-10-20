@@ -31,7 +31,7 @@ const AdidasDetails = () => {
         <div>
             <div className=" max-w-screen-xl mx-auto">
                 <Navbar></Navbar>
-                <div className="bg-base-100 shadow-xl">
+                <div className="bg-base-100 shadow-xl pb-10">
                     <div className="grid grid-cols-3 gap-6">
                         <div className="col-span-2">
                             <figure className="">
@@ -39,7 +39,7 @@ const AdidasDetails = () => {
                             </figure>
                         </div>
                         <div className="px-4">
-                            <h2 className="text-xl font-semibold">{brandName}</h2>
+                            <h2 className="text-xl font-semibold mb-2">{brandName}</h2>
                             <p className="font-medium">{name}</p>
                             <p className="font-medium mt-8 mb-3">${price}</p>
                             <div className="rating">
