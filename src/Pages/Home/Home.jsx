@@ -13,7 +13,7 @@ const Home = () => {
         <div className="text-white">
             <Header></Header>
             <div className="bg-[#f2f2f2]">
-                <div className="max-w-screen-xl mx-auto mb-20">
+                <div className="max-w-screen-xl mx-auto pb-20">
                     <h1 className="text-3xl text-gray-500 text-center pt-20 mb-10 font-semibold">Explore our Exclusive Brands</h1>
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
                         <Link to="/nike">

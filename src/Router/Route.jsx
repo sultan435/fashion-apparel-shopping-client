@@ -24,12 +24,14 @@ import NikeUpdate from "../Components/Nike/NikeUpdate";
 import HmUpdate from "../Components/Hm/HmUpdate";
 import ZaraUpdate from "../Components/Zara/ZaraUpdate";
 import LevisUpdate from "../Components/Levis/LevisUpdate";
+import Error from "../Components/Error/Error";
 
 
 const Route = createBrowserRouter([
     {
         path: "/",
         element: <MainLayout></MainLayout>,
+        errorElement:<Error></Error>,
         children:[
             {
                 path: "/",
