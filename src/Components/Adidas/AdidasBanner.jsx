@@ -12,7 +12,7 @@ const AdidasBanner = () => {
                     onSwiper={(swiper) => console.log(swiper)}
                 >
                     <SwiperSlide>
-                        <div className="hero lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/ZTqZysz/Optimized-adidasd.jpg)' }}>
+                        <div className="hero h-[60vh] lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/ZTqZysz/Optimized-adidasd.jpg)' }}>
                             <div className=""></div>
                             <div className="hero-content text-center text-neutral-content">
                             <div className=" text-gray-700">
@@ -25,7 +25,7 @@ const AdidasBanner = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="hero lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/R0PJxMh/Optimized-adidas-1-2.jpg)' }}>
+                        <div className="hero h-[60vh] lg:h-[80vh" style={{ backgroundImage: 'url(https://i.ibb.co/R0PJxMh/Optimized-adidas-1-2.jpg)' }}>
                             <div className=""></div>
                             <div className="hero-content text-center text-neutral-content">
                             <div className=" text-white">
@@ -38,7 +38,7 @@ const AdidasBanner = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="hero lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/FqpSDpL/Optimized-adidas-6.jpg)' }}>
+                        <div className="hero h-[60vh] lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/FqpSDpL/Optimized-adidas-6.jpg)' }}>
                             <div className="hero-overlay bg-opacity-30"></div>
                             <div className="hero-content text-center text-neutral-content">
                             <div className=" text-white">

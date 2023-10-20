@@ -12,7 +12,7 @@ const LevisBanner = () => {
                     onSwiper={(swiper) => console.log(swiper)}
                 >
                     <SwiperSlide>
-                        <div className="hero lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/2FLf1jg/levis-banner.jpg)' }}>
+                        <div className="hero h-[60vh] lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/2FLf1jg/levis-banner.jpg)' }}>
                             <div className="hero-overlay bg-opacity-20"></div>
                             <div className="hero-content text-center text-neutral-content">
                                 <div className=" text-white">
@@ -25,7 +25,7 @@ const LevisBanner = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="hero lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/dMD0vfV/Levis-Client-Event-full-image-scaled-1.jpg)' }}>
+                        <div className="hero h-[60vh] lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/dMD0vfV/Levis-Client-Event-full-image-scaled-1.jpg)' }}>
                         <div className="hero-overlay bg-opacity-20"></div>
                             <div className="hero-content text-center text-neutral-content">
                                 <div className=" text-white">
@@ -38,7 +38,7 @@ const LevisBanner = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="hero lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/dDWKX3F/Levis-1.png)' }}>
+                        <div className="hero h-[60vh] lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/dDWKX3F/Levis-1.png)' }}>
                         <div className="hero-overlay bg-opacity-20"></div>
                             <div className="hero-content text-center text-neutral-content">
                                 <div className=" text-white">

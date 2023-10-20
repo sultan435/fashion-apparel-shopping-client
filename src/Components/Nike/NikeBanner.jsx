@@ -12,8 +12,8 @@ const NikeBanner = () => {
                     onSwiper={(swiper) => console.log(swiper)}
                 >
                     <SwiperSlide>
-                        <div className="hero lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/hHGy3Zp/Optimized-nike-banner1-2.jpg)' }}>
-                            <div className=""></div>
+                        <div className="hero h-[60vh] lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/hHGy3Zp/Optimized-nike-banner1-2.jpg)' }}>
+                            <div className="hero-overlay bg-opacity-20"></div>
                             <div className="hero-content text-center">
                                 <div className=" text-white">
                                     <h1 className="mb-5 text-5xl font-semibold">NEW <br /><span className='text-3xl font-medium'>ARRIVAL</span></h1>
@@ -25,8 +25,8 @@ const NikeBanner = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="hero lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/KLdW21Q/maxresdefault-1.jpg)' }}>
-                            <div className=""></div>
+                        <div className="hero h-[60vh] lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/KLdW21Q/maxresdefault-1.jpg)' }}>
+                            <div className="hero-overlay bg-opacity-20"></div>
                             <div className=" text-center">
                                 <div className=" text-white">
                                     <h1 className="mb-5 text-5xl font-semibold">NEW <br /><span className='text-3xl font-medium'>ARRIVAL</span></h1>
@@ -38,8 +38,8 @@ const NikeBanner = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="hero lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/y0dc7qr/Optimized-nike-44-2.jpg)' }}>
-                            <div className=""></div>
+                        <div className="hero h-[60vh] lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/y0dc7qr/Optimized-nike-44-2.jpg)' }}>
+                            <div className="hero-overlay bg-opacity-20"></div>
                             <div className="text-center ">
                                 <div className=" text-white">
                                     <h1 className="mb-5 text-5xl font-semibold">NEW <br /><span className='text-3xl font-medium'>ARRIVAL</span></h1>

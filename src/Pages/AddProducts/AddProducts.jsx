@@ -36,7 +36,7 @@ const AddProducts = () => {
         <div>
             <div className="bg-[#f2f2f2]">
                 <Navbar></Navbar>
-                <div className=' py-16 px-28 max-w-screen-xl mx-auto '>
+                <div className=' py-16 px-4 lg:px-28 max-w-screen-xl mx-auto '>
                     <h1 className='text-5xl text-[#374151] mb-8 text-center'>Add New Product</h1>
                     <form onSubmit={handleProduct} className='mt-10'>
                         {/* form quantity row*/}

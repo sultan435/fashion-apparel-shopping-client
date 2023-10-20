@@ -12,7 +12,7 @@ const Footer = () => {
                             <div>
                                 {/* <span><AiOutlineDoubleRight className='text-[#c147bb] text-3xl '></AiOutlineDoubleRight></span> */}
                             </div>
-                            <div className='text-3xl font-semibold'><img src={`https://i.ibb.co/rdhHdbQ/Screenshot-6.png`} alt="" /></div>
+                            <div><img className='text-3xl font-semibold' src={`https://i.ibb.co/rdhHdbQ/Screenshot-6.png`} alt="" /></div>
                         </div>
                         <p className='text-xl font-medium mb-4'>Best For Shopping</p>
                         <p>Sed the used temp <br /> insididuntut labre dolore magna</p>

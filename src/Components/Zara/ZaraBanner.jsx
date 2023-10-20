@@ -12,7 +12,7 @@ const ZaraBanner = () => {
                     onSwiper={(swiper) => console.log(swiper)}
                 >
                     <SwiperSlide>
-                        <div className="hero lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/jZ7NXqB/Optimized-3d1e03e6d57b72dd063429c676dac234-2.jpg)' }}>
+                        <div className="hero h-[60vh] lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/jZ7NXqB/Optimized-3d1e03e6d57b72dd063429c676dac234-2.jpg)' }}>
                             <div className="hero-overlay bg-opacity-20"></div>
                             <div className="hero-content text-center text-neutral-content">
                                 <div className=" text-white">
@@ -25,7 +25,7 @@ const ZaraBanner = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="hero lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/DthNVD0/Untitleddsafsdf-1.png)' }}>
+                        <div className="hero h-[60vh] lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/DthNVD0/Untitleddsafsdf-1.png)' }}>
                             <div className="hero-overlay bg-opacity-20"></div>
                             <div className="hero-content text-center text-neutral-content">
                                 <div className=" text-white">
@@ -38,7 +38,7 @@ const ZaraBanner = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="hero lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/rHHSWrn/Marketing-Mix-of-ZARA-Banner-930x620.jpg)' }}>
+                        <div className="hero h-[60vh] lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/rHHSWrn/Marketing-Mix-of-ZARA-Banner-930x620.jpg)' }}>
                         <div className="hero-overlay bg-opacity-20"></div>
                             <div className="hero-content text-center text-neutral-content">
                                 <div className=" text-white">

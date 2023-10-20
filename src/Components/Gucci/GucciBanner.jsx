@@ -12,7 +12,7 @@ const GucciBanner = () => {
                     onSwiper={(swiper) => console.log(swiper)}
                 >
                     <SwiperSlide>
-                        <div className="hero lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/cYSzv44/Optimized-gucci-11-2.jpg)' }}>
+                        <div className="hero h-[60vh] lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/cYSzv44/Optimized-gucci-11-2.jpg)' }}>
                             <div className="hero-overlay bg-opacity-20"></div>
                             <div className="hero-content text-center text-neutral-content">
                                 {/* <div className=" text-white">
@@ -25,7 +25,7 @@ const GucciBanner = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="hero lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/wrxCjgT/571395da73150aa8120ad070d9543ea6.jpg)' }}>
+                        <div className="hero h-[60vh] lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/wrxCjgT/571395da73150aa8120ad070d9543ea6.jpg)' }}>
                             <div className="hero-overlay bg-opacity-20"></div>
                             <div className="hero-content text-center text-neutral-content">
                                 <div className=" text-white">
@@ -38,7 +38,7 @@ const GucciBanner = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="hero lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/wKPcRLx/Optimized-gucci-makeup-hong-kong-sogo-causewaybay-3003-1.jpg)' }}>
+                        <div className="hero h-[60vh] lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/wKPcRLx/Optimized-gucci-makeup-hong-kong-sogo-causewaybay-3003-1.jpg)' }}>
                             <div className="hero-overlay bg-opacity-20"></div>
                             <div className="hero-content text-center text-neutral-content">
                                 <div className=" text-white">

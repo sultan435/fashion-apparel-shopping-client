@@ -16,37 +16,37 @@ const Home = () => {
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
                         <Link to="/nike">
                             <div>
-                                <img className="w-36 h-36 mx-auto" src={`https://i.ibb.co/Xyw1Q90/nike.png`} alt="" />
+                                <img className="w-36 h-36 mx-auto" src={`https://i.ibb.co/PTG5hnw/Nike-Logo.png`} alt="" />
                                 <h1 className="text-3xl text-gray-700 font-medium text-center mt-2">Nike</h1>
                             </div>
                         </Link>
                         <Link to="/adidas">
                             <div>
-                                <img className="w-36 h-36 mx-auto" src={`https://i.ibb.co/hXNnKhg/adidas.png`} alt="" />
+                                <img className="w-36 h-36 mx-auto" src={`https://i.ibb.co/BnzQNN1/Adidas-logo.png`} alt="" />
                                 <h1 className="text-3xl text-gray-700 font-medium text-center mt-2">Adidas</h1>
                             </div>
                         </Link>
                         <Link to="/gucci">
                             <div>
-                                <img className="w-36 h-36 mx-auto" src={`https://i.ibb.co/YL8ng2t/gucci.png`} alt="" />
+                                <img className="w-36 h-36 mx-auto" src={`https://i.ibb.co/KFWVPks/guccilogo-1.png`} alt="" />
                                 <h1 className="text-3xl text-gray-700 font-medium text-center mt-2">Gucci</h1>
                             </div>
                         </Link>
                         <Link to="/levis">
                             <div>
-                                <img className="w-36 h-36 mx-auto" src={`https://i.ibb.co/1RQPxYT/levis.png`} alt="" />
+                                <img className="w-36 h-36 mx-auto" src={`https://i.ibb.co/rHvSVqF/levislogo.png`} alt="" />
                                 <h1 className="text-3xl text-gray-700 font-medium text-center mt-2">Levis</h1>
                             </div>
                         </Link>
                         <Link to="/zara">
                             <div>
-                                <img className="w-36 h-36 mx-auto" src={`https://i.ibb.co/f48FBfW/zara.png`} alt="" />
+                                <img className="w-36 h-36 mx-auto" src={`https://i.ibb.co/qRGZbwy/zara.png`} alt="" />
                                 <h1 className="text-3xl text-gray-700 font-medium text-center mt-2">Zara</h1>
                             </div>
                         </Link>
                         <Link to="/hm">
                             <div>
-                                <img className="w-36 h-36 " src={`https://i.ibb.co/4sY91R5/h-m.png`} alt="" />
+                                <img className="w-36 h-36 " src={`https://i.ibb.co/Mnc6yVH/hmlogo-1.png`} alt="" />
                                 <h1 className="text-3xl text-gray-700 font-medium text-center mt-2">H&M</h1>
                             </div>
                         </Link>

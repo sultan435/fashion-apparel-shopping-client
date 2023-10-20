@@ -32,8 +32,8 @@ const AdidasDetails = () => {
             <div className=" max-w-screen-xl mx-auto">
                 <Navbar></Navbar>
                 <div className="bg-base-100 shadow-xl pb-10">
-                    <div className="grid grid-cols-3 gap-6">
-                        <div className="col-span-2">
+                    <div className="grid lg:grid-cols-3 gap-6">
+                        <div className="lg:col-span-2">
                             <figure className="">
                                 <img src={image} alt="Shoes" className=" w-full" />
                             </figure>

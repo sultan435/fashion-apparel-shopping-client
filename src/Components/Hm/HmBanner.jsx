@@ -12,7 +12,7 @@ const HmBanner = () => {
                     onSwiper={(swiper) => console.log(swiper)}
                 >
                     <SwiperSlide>
-                        <div className="hero lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/XSSSVWD/Untitledfhgfh-1.png)' }}>
+                        <div className="hero h-[60vh] lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/XSSSVWD/Untitledfhgfh-1.png)' }}>
                             <div className="hero-overlay bg-opacity-20"></div>
                             {/* <div className="hero-content text-center text-neutral-content">
                                 <div className="max-w-md py-20">
@@ -24,7 +24,7 @@ const HmBanner = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="hero lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/jDLCBfJ/hm-ad-na-prikope-central-prague-czech-republic-europe-BK5-F39-1.jpg)' }}>
+                        <div className="hero h-[60vh] lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/jDLCBfJ/hm-ad-na-prikope-central-prague-czech-republic-europe-BK5-F39-1.jpg)' }}>
                             <div className="hero-overlay bg-opacity-20"></div>
                             <div className="hero-content text-center text-neutral-content">
                                 <div className=" text-white">
@@ -37,7 +37,7 @@ const HmBanner = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="hero lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/W5xFkYM/Untidsafsdftled-1.png)' }}>
+                        <div className="hero h-[60vh] lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/W5xFkYM/Untidsafsdftled-1.png)' }}>
                         <div className="hero-overlay bg-opacity-20"></div>
                             <div className="hero-content text-center text-neutral-content">
                                 <div className=" text-white">
