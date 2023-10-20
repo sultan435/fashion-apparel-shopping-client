@@ -66,7 +66,7 @@ const MyCart = () => {
                             </div>
                             <p className="font-medium">${cart.price}</p>
                             <div className="flex gap-8 pt-4">
-                                <button onClick={() => handleDelete(cart._id)} className="btn btn-primary">Delete</button>
+                                <button onClick={() => handleDelete(cart._id)} className="rounded-md text-lg font-medium text-white bg-[#ed4242] px-5 py-2">Delete</button>
                             </div>
                         </div>
                     </div>)

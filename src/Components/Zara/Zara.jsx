@@ -32,10 +32,10 @@ const Zara = () => {
                             <p className="font-medium">Price: <span className="text-red-600">${zara.price}</span></p>
                             <div className="flex gap-8 pt-4">
                                 <Link to={`/zaraDetails/${zara._id}`}>
-                                    <button className="btn btn-primary">Details</button>
+                                    <button className="rounded-md text-lg font-medium text-white bg-[#ed4242] px-5 py-2">Details</button>
                                 </Link>
                                 <Link to={`/zaraUpdate/${zara._id}`}>
-                                    <button className="btn btn-primary">Update</button>
+                                    <button className="rounded-md text-lg font-medium text-white bg-[#ed4242] px-5 py-2">Update</button>
                                 </Link>
                             </div>
                         </div>

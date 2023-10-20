@@ -1,6 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import Navbar from "../../Shared/Navbar/Navbar";
-// import { useState } from "react";
+import Swal from 'sweetalert2'
 
 
 const AdidasDetails = () => {
@@ -23,7 +23,12 @@ const AdidasDetails = () => {
             .then(data => {
                 // console.log(data);
                 if (data.acknowledged) {
-                    alert("successfully added")
+                    Swal.fire({
+                        title: 'success!',
+                        text: 'product cart added successfully',
+                        icon: 'success',
+                        confirmButtonText: 'Cool'
+                      })
                 }
             })
     }
