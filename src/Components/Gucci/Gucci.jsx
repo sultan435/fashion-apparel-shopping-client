@@ -5,9 +5,7 @@ import GucciBanner from "./GucciBanner";
 
 const Gucci = () => {
     const allProducts = useLoaderData()
-    console.log(allProducts)
     const gucciProduct = allProducts.filter(products => products.brandName === "GUCCI")
-    console.log(gucciProduct)
     return (
         <div className="max-w-screen-xl mx-auto">
             <Navbar></Navbar>
@@ -35,7 +33,10 @@ const Gucci = () => {
 
                                     <button className="btn btn-primary">Details</button>
                                 </Link>
-                                <button className="btn btn-primary">Update</button>
+                                <Link to={`/gucciUpdate/${gucci._id}`}>
+                                    <button className="btn btn-primary">Update</button>
+                                </Link>
+
                             </div>
                         </div>
                     </div>)

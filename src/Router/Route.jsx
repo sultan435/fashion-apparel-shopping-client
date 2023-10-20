@@ -18,6 +18,12 @@ import Zara from "../Components/Zara/Zara";
 import ZaraDetails from "../Components/Zara/ZaraDetails";
 import Hm from "../Components/Hm/Hm";
 import HmDetails from "../Components/Hm/HmDetails";
+import UpdateAdidas from "../Components/Adidas/UpdateAdidas";
+import GucciUpdate from "../Components/Gucci/GucciUpdate";
+import NikeUpdate from "../Components/Nike/NikeUpdate";
+import HmUpdate from "../Components/Hm/HmUpdate";
+import ZaraUpdate from "../Components/Zara/ZaraUpdate";
+import LevisUpdate from "../Components/Levis/LevisUpdate";
 
 
 const Route = createBrowserRouter([
@@ -58,6 +64,11 @@ const Route = createBrowserRouter([
                 loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
             },
             {
+                path: "/nikeUpdate/:id",
+                element: <NikeUpdate></NikeUpdate>,
+                loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+            },
+            {
                 path: "/adidas",
                 element: <Adidas></Adidas>,
                 loader: ()=>fetch("http://localhost:5000/products")
@@ -68,6 +79,12 @@ const Route = createBrowserRouter([
                 loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
             },
             {
+                path: "/updateAdidas/:id",
+                element: <UpdateAdidas></UpdateAdidas>,
+                loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+
+            },
+            {
                 path: "/gucci",
                 element: <Gucci></Gucci>,
                 loader: ()=>fetch("http://localhost:5000/products")
@@ -75,6 +92,11 @@ const Route = createBrowserRouter([
             {
                 path: "/gucciDetails/:id",
                 element:<GucciDetails></GucciDetails>,
+                loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+            },
+            {
+                path: "/gucciUpdate/:id",
+                element:<GucciUpdate></GucciUpdate>,
                 loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
             },
             {
@@ -88,6 +110,11 @@ const Route = createBrowserRouter([
                 loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
             },
             {
+                path: "/levisUpdate/:id",
+                element:<LevisUpdate></LevisUpdate>,
+                loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+            },
+            {
                 path: "/zara",
                 element: <Zara></Zara>,
                 loader: ()=>fetch("http://localhost:5000/products")
@@ -98,6 +125,11 @@ const Route = createBrowserRouter([
                 loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
             },
             {
+                path: "/zaraUpdate/:id",
+                element: <ZaraUpdate></ZaraUpdate>,
+                loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+            },
+            {
                 path: "/hm",
                 element:<Hm></Hm>,
                 loader: ()=>fetch("http://localhost:5000/products")
@@ -105,6 +137,11 @@ const Route = createBrowserRouter([
             {
                 path: "/hmDetails/:id",
                 element: <HmDetails></HmDetails>,
+                loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`) 
+            },
+            {
+                path: "/hmUpdate/:id",
+                element: <HmUpdate></HmUpdate>,
                 loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`) 
             }
         ]

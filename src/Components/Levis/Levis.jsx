@@ -32,10 +32,12 @@ const Levis = () => {
                             <p className="font-medium">Price: <span className="text-red-600">${levis.price}</span></p>
                             <div className="flex gap-8 pt-4">
                                 <Link to={`/levisDetails/${levis._id}`}>
-
                                     <button className="btn btn-primary">Details</button>
                                 </Link>
-                                <button className="btn btn-primary">Update</button>
+                                <Link to={`/levisUpdate/${levis._id}`}>
+                                    <button className="btn btn-primary">Update</button>
+                                </Link>
+
                             </div>
                         </div>
                     </div>)

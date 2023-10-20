@@ -32,10 +32,11 @@ const Hm = () => {
                             <p className="font-medium">Price: <span className="text-red-600">${hm.price}</span></p>
                             <div className="flex gap-8 pt-4">
                                 <Link to={`/hmDetails/${hm._id}`}>
-
                                     <button className="btn btn-primary">Details</button>
                                 </Link>
-                                <button className="btn btn-primary">Update</button>
+                                <Link to={`/hmUpdate/${hm._id}`}>
+                                    <button className="btn btn-primary">Update</button>
+                                </Link>
                             </div>
                         </div>
                     </div>)

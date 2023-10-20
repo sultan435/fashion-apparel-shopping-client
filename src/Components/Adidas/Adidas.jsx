@@ -3,13 +3,14 @@ import Navbar from "../../Shared/Navbar/Navbar";
 import AdidasBanner from "./AdidasBanner";
 
 
+
 const Adidas = () => {
     const allProducts = useLoaderData()
     console.log(allProducts)
     const adidasProduct = allProducts.filter(products => products.brandName === "ADIDAS")
     console.log(adidasProduct)
     return (
-        
+
         <div className="max-w-screen-xl mx-auto">
             <Navbar></Navbar>
             <AdidasBanner></AdidasBanner>
@@ -33,10 +34,11 @@ const Adidas = () => {
                             <p className="font-medium">Price: <span className="text-red-600">${adidas.price}</span></p>
                             <div className="flex gap-8 pt-4">
                                 <Link to={`/adidasDetails/${adidas._id}`}>
-
                                     <button className="btn btn-primary">Details</button>
                                 </Link>
-                                <button className="btn btn-primary">Update</button>
+                                <Link to={`/updateAdidas/${adidas._id}`}>
+                                    <button className="btn btn-primary">Update</button>
+                                </Link>
                             </div>
                         </div>
                     </div>)
