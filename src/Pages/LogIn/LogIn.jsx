@@ -116,7 +116,7 @@ const LogIn = () => {
                     </div>
                     <p className="text-center">OR</p>
                     <div className="">
-                        <button onClick={handleGoogleLogin} className="btn w-full border-black my-3 ">
+                        <button onClick={handleGoogleLogin} className="btn w-full border-black my-3 px-6">
                             <FaGoogle></FaGoogle>
                             Sign in with Google
                         </button>

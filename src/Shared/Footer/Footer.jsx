@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin, FaWhatsappSquare } from "react-icons/fa";
 
-
 const Footer = () => {
     return (
         <div className="bg-[#f2f2f2]">
@@ -12,7 +11,7 @@ const Footer = () => {
                             <div>
                                 {/* <span><AiOutlineDoubleRight className='text-[#c147bb] text-3xl '></AiOutlineDoubleRight></span> */}
                             </div>
-                            <div><img className='text-3xl font-semibold' src={`https://i.ibb.co/rdhHdbQ/Screenshot-6.png`} alt="" /></div>
+                            <div> <img className="h-12" src={`https://i.ibb.co/9V0CbdW/logo-1-1.png`} alt="" /></div>
                         </div>
                         <p className='text-xl font-medium mb-4'>Best For Shopping</p>
                         <p>Sed the used temp <br /> insididuntut labre dolore magna</p>

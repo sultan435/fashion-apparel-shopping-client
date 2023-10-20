@@ -5,15 +5,12 @@ import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 
 const Navbar = () => {
-
+    
     const { user, logoutUser } = useContext(AuthContext)
-
     const handleLogout = () => {
         logoutUser()
             .then(() => console.log("successfully logout"))
-
     }
-
     const NavLinks = <>
         <li className="">
             <NavLink to="/" className={({ isActive, isPending }) =>
@@ -37,8 +34,8 @@ const Navbar = () => {
         </li>
     </>
     return (
-        <div>
-            <div className="navbar max-w-screen-xl mx-auto py-8">
+        <div className="bg-[#f2f2f2]">
+            <div className="navbar max-w-screen-xl mx-auto py-8 ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden ">
@@ -49,8 +46,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="hidden lg:block">
-                        {/* <a className="text-2xl text-black">FASHION<br /><span className="">STYLE</span></a> */}
-                        <img className="" src={`https://i.ibb.co/rdhHdbQ/Screenshot-6.png`} alt="" />
+                        <img className="h-12" src={`https://i.ibb.co/9V0CbdW/logo-1-1.png`} alt="" />
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">

@@ -24,7 +24,7 @@ import NikeUpdate from "../Components/Nike/NikeUpdate";
 import HmUpdate from "../Components/Hm/HmUpdate";
 import ZaraUpdate from "../Components/Zara/ZaraUpdate";
 import LevisUpdate from "../Components/Levis/LevisUpdate";
-// import Error from "../Components/Error/Error";
+import Error from "../Components/Error/Error";
 import PrivateRoute from "./PrivateRoute";
 
 
@@ -32,6 +32,7 @@ const Route = createBrowserRouter([
     {
         path: "/",
         element: <MainLayout></MainLayout>,
+        errorElement:<Error></Error>,
         children:[
             {
                 path: "/",

@@ -1,18 +1,9 @@
-import { Link, useLoaderData } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Header from "../../Components/Header/Header";
-
-
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import 'swiper/css';
 
-
 const Home = () => {
-    // const [state, setState] = useState([])
-    const allProducts = useLoaderData()
-    console.log(allProducts);
-
-
     return (
         <div className="text-white">
             <Header></Header>
@@ -178,7 +169,7 @@ const Home = () => {
                                 </div>
                             </div>
                         </SwiperSlide>
-                        
+
                     </Swiper>
 
                 </div>
