@@ -1,16 +1,18 @@
-import { Link } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import Header from "../../Components/Header/Header";
 // import { useState } from "react";
 
 
 const Home = () => {
     // const [state, setState] = useState([])
+    const allProducts = useLoaderData()
+    console.log(allProducts);
 
 
     return (
         <div className="text-white">
             <Header></Header>
-            <div className="">
+            <div className="bg-[#f2f2f2]">
                 <div className="max-w-screen-xl mx-auto mb-20">
                     <h1 className="text-3xl text-gray-500 text-center pt-20 mb-10 font-semibold">Explore our Exclusive Brands</h1>
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">

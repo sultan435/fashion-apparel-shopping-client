@@ -12,7 +12,7 @@ const ZaraDetails = () => {
         const singleProducts = { name, type, image, brandName, price, description };
         console.log(singleProducts);
 
-        fetch("http://localhost:5000/store", {
+        fetch("https://fashion-apparel-server-delta.vercel.app/store", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

@@ -21,7 +21,7 @@ const ZaraUpdate = () => {
         const product = { name, image, brandName, price, type, rating, description }
         console.log(product);
 
-        fetch(`http://localhost:5000/products/${_id}`,{
+        fetch(`https://fashion-apparel-server-delta.vercel.app/products/${_id}`,{
             method: "PUT",
             headers:{
                 "Content-Type" : "application/json"

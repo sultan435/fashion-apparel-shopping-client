@@ -17,7 +17,7 @@ const AddProducts = () => {
         const product = { name, image, brandName, price, type, rating, description }
         console.log(product);
 
-        fetch("http://localhost:5000/products", {
+        fetch("https://fashion-apparel-server-delta.vercel.app/products", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

@@ -21,7 +21,7 @@ const MyCart = () => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/store/${id}`, {
+                fetch(`https://fashion-apparel-server-delta.vercel.app/store/${id}`, {
                     method: "DELETE"
                 })
                     .then(res => res.json())

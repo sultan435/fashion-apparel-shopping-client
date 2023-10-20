@@ -34,7 +34,7 @@ const Route = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
-                // loader: ()=>fetch("http://localhost:5000/products")
+                loader: ()=>fetch("https://fashion-apparel-server-delta.vercel.app/products")
             },
             {
                 path: "/product",
@@ -42,8 +42,8 @@ const Route = createBrowserRouter([
             },
             {
                 path: "/cart",
-                element: <MyCart></MyCart>,
-               loader:()=>fetch("http://localhost:5000/store")
+                element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
+               loader:()=>fetch("https://fashion-apparel-server-delta.vercel.app/store")
             },
             {
                 path: "/login",
@@ -56,93 +56,93 @@ const Route = createBrowserRouter([
             {
                 path: "/nike",
                 element: <Nike></Nike>,
-                loader: ()=>fetch("http://localhost:5000/products")
+                loader: ()=>fetch("https://fashion-apparel-server-delta.vercel.app/products")
             },
             {
                 path: "/nikeDetails/:id",
-                element: <NikeDetails></NikeDetails>,
-                loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+                element: <PrivateRoute><NikeDetails></NikeDetails></PrivateRoute>,
+                loader:({params})=>fetch(`https://fashion-apparel-server-delta.vercel.app/products/${params.id}`)
             },
             {
                 path: "/nikeUpdate/:id",
-                element: <NikeUpdate></NikeUpdate>,
-                loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+                element: <PrivateRoute><NikeUpdate></NikeUpdate></PrivateRoute>,
+                loader:({params})=>fetch(`https://fashion-apparel-server-delta.vercel.app/products/${params.id}`)
             },
             {
                 path: "/adidas",
                 element: <Adidas></Adidas>,
-                loader: ()=>fetch("http://localhost:5000/products")
+                loader: ()=>fetch("https://fashion-apparel-server-delta.vercel.app/products")
             },
             {
                 path:"/adidasDetails/:id",
-                element:<AdidasDetails></AdidasDetails>,
-                loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+                element:<PrivateRoute><AdidasDetails></AdidasDetails></PrivateRoute>,
+                loader:({params})=>fetch(`https://fashion-apparel-server-delta.vercel.app/products/${params.id}`)
             },
             {
                 path: "/updateAdidas/:id",
-                element: <UpdateAdidas></UpdateAdidas>,
-                loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+                element: <PrivateRoute><UpdateAdidas></UpdateAdidas></PrivateRoute>,
+                loader:({params})=>fetch(`https://fashion-apparel-server-delta.vercel.app/products/${params.id}`)
 
             },
             {
                 path: "/gucci",
                 element: <Gucci></Gucci>,
-                loader: ()=>fetch("http://localhost:5000/products")
+                loader: ()=>fetch("https://fashion-apparel-server-delta.vercel.app/products")
             },
             {
                 path: "/gucciDetails/:id",
-                element:<GucciDetails></GucciDetails>,
-                loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+                element:<PrivateRoute><GucciDetails></GucciDetails></PrivateRoute>,
+                loader:({params})=>fetch(`https://fashion-apparel-server-delta.vercel.app/products/${params.id}`)
             },
             {
                 path: "/gucciUpdate/:id",
-                element:<GucciUpdate></GucciUpdate>,
-                loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+                element:<PrivateRoute><GucciUpdate></GucciUpdate></PrivateRoute>,
+                loader:({params})=>fetch(`https://fashion-apparel-server-delta.vercel.app/products/${params.id}`)
             },
             {
                 path: "/levis",
                 element: <Levis></Levis>,
-                loader: ()=>fetch("http://localhost:5000/products")
+                loader: ()=>fetch("https://fashion-apparel-server-delta.vercel.app/products")
             },
             {
                 path: "/levisDetails/:id",
-                element:<LevisDetails></LevisDetails>,
-                loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+                element:<PrivateRoute><LevisDetails></LevisDetails></PrivateRoute>,
+                loader:({params})=>fetch(`https://fashion-apparel-server-delta.vercel.app/products/${params.id}`)
             },
             {
                 path: "/levisUpdate/:id",
-                element:<LevisUpdate></LevisUpdate>,
-                loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+                element:<PrivateRoute><LevisUpdate></LevisUpdate></PrivateRoute>,
+                loader:({params})=>fetch(`https://fashion-apparel-server-delta.vercel.app/products/${params.id}`)
             },
             {
                 path: "/zara",
                 element: <Zara></Zara>,
-                loader: ()=>fetch("http://localhost:5000/products")
+                loader: ()=>fetch("https://fashion-apparel-server-delta.vercel.app/products")
             },
             {
                 path: "/zaraDetails/:id",
-                element: <ZaraDetails></ZaraDetails>,
-                loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+                element: <PrivateRoute><ZaraDetails></ZaraDetails></PrivateRoute>,
+                loader:({params})=>fetch(`https://fashion-apparel-server-delta.vercel.app/products/${params.id}`)
             },
             {
                 path: "/zaraUpdate/:id",
-                element: <ZaraUpdate></ZaraUpdate>,
-                loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+                element: <PrivateRoute><ZaraUpdate></ZaraUpdate></PrivateRoute>,
+                loader:({params})=>fetch(`https://fashion-apparel-server-delta.vercel.app/products/${params.id}`)
             },
             {
                 path: "/hm",
                 element:<Hm></Hm>,
-                loader: ()=>fetch("http://localhost:5000/products")
+                loader: ()=>fetch("https://fashion-apparel-server-delta.vercel.app/products")
             },
             {
                 path: "/hmDetails/:id",
-                element: <HmDetails></HmDetails>,
-                loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`) 
+                element: <PrivateRoute><HmDetails></HmDetails></PrivateRoute>,
+                loader:({params})=>fetch(`https://fashion-apparel-server-delta.vercel.app/products/${params.id}`) 
             },
             {
                 path: "/hmUpdate/:id",
-                element: <HmUpdate></HmUpdate>,
-                loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`) 
+                element: <PrivateRoute><HmUpdate></HmUpdate></PrivateRoute>,
+                loader:({params})=>fetch(`https://fashion-apparel-server-delta.vercel.app/products/${params.id}`) 
             }
         ]
     }
