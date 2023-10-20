@@ -7,9 +7,9 @@ const AdidasDetails = () => {
     const product = useLoaderData()
     const { name, image, description, type, price, brandName } = product
 
-    const handleDataStore = (name, type, image) => {
+    const handleDataStore = (name, type, image, brandName, price, description) => {
 
-        const singleProducts = { name, type, image };
+        const singleProducts = { name, type, image, brandName, price, description };
         console.log(singleProducts);
 
         fetch("http://localhost:5000/store", {
@@ -53,7 +53,7 @@ const AdidasDetails = () => {
                                 <h2 className="underline underline-offset-1">Find your size</h2>
                                 <input className="py-2 px-6 w-full border rounded-lg mt-6" type="text" name="size" placeholder="Select size" id="" />
                                 <div className="mt-4 flex gap-4 items-center">
-                                    <button onClick={() => handleDataStore(name, type, image)} className="py-2 rounded-lg w-full border-2 border-slate-900 bg-slate-900  text-white font-semibold">Add To Bag</button>
+                                    <button onClick={() => handleDataStore(name, type, image,brandName, price, description)} className="py-2 rounded-lg w-full border-2 border-slate-900 bg-slate-900  text-white font-semibold">Add To Bag</button>
                                     <button className="border-2 border-slate-900 py-2 px-4 rounded-lg"> Wishlist</button>
                                 </div>
                                 <div className="mt-8">
