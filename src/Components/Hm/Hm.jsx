@@ -1,20 +1,26 @@
 import { Link, useLoaderData } from "react-router-dom";
 import Navbar from "../../Shared/Navbar/Navbar";
 import HmBanner from "./HmBanner";
+import { useEffect, useState } from "react";
 
 
 const Hm = () => {
     const allProducts = useLoaderData()
     console.log(allProducts)
-    const hmProduct = allProducts.filter(products => products.brandName === "H&M")
-    console.log(hmProduct)
+    const [HmData, setData]= useState([])
+    
+    
+    useEffect(()=>{
+        const hmProduct = allProducts.filter(products => products.brandName === "H&M")
+        setData(hmProduct)
+    },[allProducts])
     return (
         <div className="max-w-screen-xl mx-auto">
             <Navbar></Navbar>
             <HmBanner></HmBanner>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
                 {
-                    hmProduct.map(hm => <div key={hm._id} className="bg-base-100 shadow-xl">
+                    HmData.map(hm => <div key={hm._id} className="bg-base-100 shadow-xl">
                         <figure className="">
                             <img src={hm.image} alt="Shoes" className="rounded-t-lg" />
                         </figure>

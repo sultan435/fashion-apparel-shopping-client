@@ -6,7 +6,7 @@ import Nike from "../Components/Nike/Nike";
 import Adidas from "../Components/Adidas/Adidas";
 import LogIn from "../Pages/LogIn/LogIn";
 import Register from "../Pages/Register/Register";
-import PrivateRoute from "./PrivateRoute";
+// import PrivateRoute from "./PrivateRoute";
 import NikeDetails from "../Components/Nike/NikeDetails";
 import MyCart from "../Pages/MyCart/MyCart";
 import AdidasDetails from "../Components/Adidas/AdidasDetails";
@@ -24,14 +24,14 @@ import NikeUpdate from "../Components/Nike/NikeUpdate";
 import HmUpdate from "../Components/Hm/HmUpdate";
 import ZaraUpdate from "../Components/Zara/ZaraUpdate";
 import LevisUpdate from "../Components/Levis/LevisUpdate";
-import Error from "../Components/Error/Error";
+// import Error from "../Components/Error/Error";
+import PrivateRoute from "./PrivateRoute";
 
 
 const Route = createBrowserRouter([
     {
         path: "/",
         element: <MainLayout></MainLayout>,
-        errorElement:<Error></Error>,
         children:[
             {
                 path: "/",

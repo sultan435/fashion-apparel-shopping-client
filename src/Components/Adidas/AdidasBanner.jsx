@@ -25,7 +25,7 @@ const AdidasBanner = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="hero h-[60vh] lg:h-[80vh" style={{ backgroundImage: 'url(https://i.ibb.co/R0PJxMh/Optimized-adidas-1-2.jpg)' }}>
+                        <div className="hero h-[60vh] lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/T0KTkX6/modern-blue-sports-shoe-design-close-up-fashionable-generated-by-ai-188544-19682-1.jpg)' }}>
                             <div className=""></div>
                             <div className="hero-content text-center text-neutral-content">
                             <div className=" text-white">
@@ -38,7 +38,7 @@ const AdidasBanner = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="hero h-[60vh] lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/FqpSDpL/Optimized-adidas-6.jpg)' }}>
+                        <div className="hero h-[60vh] lg:h-[80vh]" style={{ backgroundImage: 'url(https://i.ibb.co/yWZRT3r/Optimized-full-shot-woman-training-with-ball-1.jpg)' }}>
                             <div className="hero-overlay bg-opacity-30"></div>
                             <div className="hero-content text-center text-neutral-content">
                             <div className=" text-white">
