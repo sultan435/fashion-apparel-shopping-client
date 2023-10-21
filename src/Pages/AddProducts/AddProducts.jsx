@@ -8,7 +8,7 @@ const AddProducts = () => {
         const form = event.target;
         const name = form.name.value;
         const image = form.image.value;
-        const brandName = form.brandName.value.toUpperCase();
+        const brandName = form.brandName.value;
         const price = form.price.value;
         const type = form.type.value;
         const rating = form.rating.value;
@@ -56,9 +56,14 @@ const AddProducts = () => {
                                 <label >
                                     <span className="text-lg pl-1">Brand Name</span>
                                 </label>
-                                <label>
-                                    <input type="text" name='brandName' placeholder="Enter Brand Name" className="border rounded-lg py-3 px-4 bg-white my-2 w-full" />
-                                </label>
+                                <select name="brandName" className="border rounded-lg py-3 px-4 bg-white my-2 w-full">
+                                    <option defaultValue="nike">NIKE</option>
+                                    <option defaultValue="adidas">ADIDAS</option>
+                                    <option defaultValue="gucci">GUCCI</option>
+                                    <option defaultValue="levis">LEVIS</option>
+                                    <option defaultValue="h&m">H&M</option>
+                                    <option defaultValue="zara">ZARA</option>
+                                </select>
                             </div>
                         </div>
                         <div className='lg:flex md:flex gap-6'>
