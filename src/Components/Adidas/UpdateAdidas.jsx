@@ -108,7 +108,7 @@ const UpdateAdidas = () => {
                                 <textarea className="w-full border rounded-lg py-3 px-4 bg-white my-2" name="description" defaultValue={description} id="" cols="30" rows="3"></textarea>
                             </div>
                         </div>
-                        <input type="submit" value="Add Product" className='py-3 mt-4 cursor-pointer rounded-md w-full border bg-[#ed4242]  text-white text-lg font-semibold' />
+                        <input type="submit" value="Update Product" className='py-3 mt-4 cursor-pointer rounded-md w-full border bg-[#ed4242]  text-white text-lg font-semibold' />
                     </form>
                 </div>
             </div>

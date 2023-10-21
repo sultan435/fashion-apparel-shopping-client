@@ -49,7 +49,6 @@ const LevisUpdate = () => {
                 <div className=' py-16 px-4 lg:px-28 max-w-screen-xl mx-auto '>
                     <h1 className='text-5xl text-[#374151] mb-8 text-center'>Update Levis Product</h1>
                     <form onSubmit={handleUpdateLevis} className='mt-10'>
-                        {/* form quantity row*/}
                         <div className='flex gap-6'>
                             <div className='w-1/2'>
                                 <label >
@@ -67,9 +66,8 @@ const LevisUpdate = () => {
                                     <input type="text" name='brandName'defaultValue={brandName} className="border rounded-lg py-3 px-4 bg-white my-2 w-full" />
                                 </label>
                             </div>
-
                         </div>
-                        {/* form supplier row*/}
+
                         <div className='flex gap-6'>
                             <div className='w-1/2'>
                                 <label >
@@ -88,7 +86,6 @@ const LevisUpdate = () => {
                                 </label>
                             </div>
                         </div>
-                        {/* form category row*/}
                         <div className='flex gap-6'>
                             <div className='w-1/2'>
                                 <label >
@@ -107,8 +104,6 @@ const LevisUpdate = () => {
                                 </label>
                             </div>
                         </div>
-
-                        {/* form photo url row*/}
                         <div className='flex gap-6'>
                             <div className='w-full'>
                                 <label >
@@ -117,7 +112,7 @@ const LevisUpdate = () => {
                                 <textarea className="w-full border rounded-lg py-3 px-4 bg-white my-2" name="description"defaultValue={description} id="" cols="30" rows="3"></textarea>
                             </div>
                         </div>
-                        <input type="submit" value="Add Product" className='py-3 mt-4 cursor-pointer rounded-md w-full border bg-[#ed4242]  text-white text-lg font-semibold' />
+                        <input type="submit" value="Update Product" className='py-3 mt-4 cursor-pointer rounded-md w-full border bg-[#ed4242]  text-white text-lg font-semibold' />
                     </form>
                 </div>
             </div>
