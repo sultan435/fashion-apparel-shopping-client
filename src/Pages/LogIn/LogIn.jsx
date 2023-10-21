@@ -18,7 +18,6 @@ const LogIn = () => {
         const form = e.target
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password);
 
         setLoginError("")
 
@@ -42,6 +41,7 @@ const LogIn = () => {
         loginUser(email, password)
             .then(result => {
                 console.log(result.user)
+                Navigate(location?.state ? location.state : "/")
             })
             .catch(error => {
                 console.error(error)
@@ -53,7 +53,7 @@ const LogIn = () => {
     const handleGoogleLogin = (googleProvider) => {
         googleUser(googleProvider)
             .then(result => {
-                console.log('google login', result.user)
+                console.log(result.user)
                 Navigate(location?.state ? location.state : "/")
             })
             .catch(error => {
@@ -64,7 +64,6 @@ const LogIn = () => {
         <div>
             <Navbar></Navbar>
             <div className="bg-[#f2f2f2] py-24 px-3">
-
                 <div className="md:w-3/4 lg:w-1/2 mx-auto bg-white p-10 rounded-lg">
                     <div className="text-center mb-12">
                         <h1 className="text-4xl text-[#403F3F] font-semibold">LOGIN</h1>

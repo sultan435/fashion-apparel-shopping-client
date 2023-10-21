@@ -9,7 +9,6 @@ const MyCart = () => {
     const [users, setUsers] = useState(loadedUser)
 
     const handleDelete = (id) => {
-        console.log(id)
         Swal.fire({
             title: 'Are you sure?',
             text: "You won't be able to revert this!",
@@ -20,7 +19,6 @@ const MyCart = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-
                 fetch(`https://fashion-apparel-server-delta.vercel.app/store/${id}`, {
                     method: "DELETE"
                 })
@@ -36,18 +34,13 @@ const MyCart = () => {
                             setUsers(deleted)
                         }
                     })
-               
             }
         })
-
-
     }
-
     return (
         <div>
             <Navbar></Navbar>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 gap-6 my-10 max-w-screen-xl mx-auto">
-
                 {
                     users.map(cart => <div key={cart._id} className="bg-base-100 shadow-xl">
                         <figure className="">

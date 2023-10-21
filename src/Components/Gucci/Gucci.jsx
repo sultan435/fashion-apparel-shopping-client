@@ -1,18 +1,24 @@
 import { Link, useLoaderData } from "react-router-dom";
 import Navbar from "../../Shared/Navbar/Navbar";
 import GucciBanner from "./GucciBanner";
-
+import { useEffect, useState } from "react";
 
 const Gucci = () => {
     const allProducts = useLoaderData()
-    const gucciProduct = allProducts.filter(products => products.brandName === "GUCCI")
+    const [gucciData, setGucciData]= useState([])
+    
+    useEffect(()=>{
+        const gucciProduct = allProducts.filter(products => products.brandName === "GUCCI")
+        setGucciData(gucciProduct)
+    },[allProducts])
+    
     return (
         <div className="max-w-screen-xl mx-auto">
             <Navbar></Navbar>
             <GucciBanner></GucciBanner>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
                 {
-                    gucciProduct.map(gucci => <div key={gucci._id} className="bg-base-100 shadow-xl">
+                    gucciData.map(gucci => <div key={gucci._id} className="bg-base-100 shadow-xl">
                         <figure className="">
                             <img src={gucci.image} alt="Shoes" className="rounded-t-lg" />
                         </figure>
@@ -30,7 +36,6 @@ const Gucci = () => {
                             <p className="font-medium">Price: <span className="text-red-600">${gucci.price}</span></p>
                             <div className="flex gap-8 pt-4">
                                 <Link to={`/gucciDetails/${gucci._id}`}>
-
                                     <button className="rounded-md text-lg font-medium text-white bg-[#ed4242] px-5 py-2">Details</button>
                                 </Link>
                                 <Link to={`/gucciUpdate/${gucci._id}`}>
@@ -41,7 +46,6 @@ const Gucci = () => {
                         </div>
                     </div>)
                 }
-
             </div>
         </div>
     );

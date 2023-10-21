@@ -8,9 +8,6 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center text-gray-900 md:text-left pt-12 lg:pt-20 pb-12">
                     <div className='mb-10'>
                         <div className='flex gap-1 justify-center md:justify-start  items-center mb-6'>
-                            <div>
-                                {/* <span><AiOutlineDoubleRight className='text-[#c147bb] text-3xl '></AiOutlineDoubleRight></span> */}
-                            </div>
                             <div> <img className="h-12" src={`https://i.ibb.co/9V0CbdW/logo-1-1.png`} alt="" /></div>
                         </div>
                         <p className='text-xl font-medium mb-4'>Best For Shopping</p>

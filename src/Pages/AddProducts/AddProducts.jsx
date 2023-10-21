@@ -1,7 +1,6 @@
 import Navbar from "../../Shared/Navbar/Navbar";
 import Swal from 'sweetalert2'
 
-
 const AddProducts = () => {
 
     const handleProduct = event => {
@@ -15,7 +14,6 @@ const AddProducts = () => {
         const rating = form.rating.value;
         const description = form.description.value;
         const product = { name, image, brandName, price, type, rating, description }
-        console.log(product);
 
         fetch("https://fashion-apparel-server-delta.vercel.app/products", {
             method: "POST",
@@ -33,7 +31,7 @@ const AddProducts = () => {
                         text: 'product added successfully',
                         icon: 'success',
                         confirmButtonText: 'Cool'
-                      })
+                    })
                 }
                 form.reset()
             })
@@ -45,7 +43,6 @@ const AddProducts = () => {
                 <div className=' py-16 px-4 lg:px-28 max-w-screen-xl mx-auto '>
                     <h1 className='text-5xl text-[#374151] mb-8 text-center'>Add New Product</h1>
                     <form onSubmit={handleProduct} className='mt-10'>
-                        {/* form quantity row*/}
                         <div className='flex gap-6'>
                             <div className='w-1/2'>
                                 <label >
@@ -63,9 +60,7 @@ const AddProducts = () => {
                                     <input type="text" name='brandName' placeholder="Enter Brand Name" className="border rounded-lg py-3 px-4 bg-white my-2 w-full" />
                                 </label>
                             </div>
-
                         </div>
-                        {/* form supplier row*/}
                         <div className='flex gap-6'>
                             <div className='w-1/2'>
                                 <label >
@@ -84,7 +79,6 @@ const AddProducts = () => {
                                 </label>
                             </div>
                         </div>
-                        {/* form category row*/}
                         <div className='flex gap-6'>
                             <div className='w-1/2'>
                                 <label >
@@ -103,17 +97,12 @@ const AddProducts = () => {
                                 </label>
                             </div>
                         </div>
-
-                        {/* form photo url row*/}
                         <div className='flex gap-6'>
                             <div className='w-full'>
                                 <label >
                                     <span className="text-lg pl-1">Short Description</span>
                                 </label>
                                 <textarea className="w-full border rounded-lg py-3 px-4 bg-white my-2" name="description" id="" cols="30" rows="3"></textarea>
-                                {/* <label>
-                                    <input type="text" name='description' placeholder="Enter Short Description" className="border rounded-lg py-3 px-4 bg-white my-2 w-full" />
-                                </label> */}
                             </div>
                         </div>
                         <input type="submit" value="Add Product" className='py-3 mt-4 cursor-pointer rounded-md w-full border bg-[#ed4242]  text-white text-lg font-semibold' />

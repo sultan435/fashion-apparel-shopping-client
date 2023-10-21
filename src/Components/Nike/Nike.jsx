@@ -1,11 +1,16 @@
 import { Link, useLoaderData } from "react-router-dom";
 import Navbar from "../../Shared/Navbar/Navbar";
 import NikeBanner from "./NikeBanner";
+import { useEffect, useState } from "react";
 
 const Nike = () => {
-    const nikeData = useLoaderData()
-    console.log(nikeData);
-    const nikeProduct = nikeData.filter(nike => nike.brandName === "NIKE")
+    const allProducts = useLoaderData()
+    const [nikeData, setNikeData] = useState([])
+
+    useEffect(() => {
+        const nikeProduct = allProducts.filter(nike => nike.brandName === "NIKE")
+        setNikeData(nikeProduct)
+    }, [allProducts])
 
     return (
         <div className="max-w-screen-xl mx-auto">
@@ -13,7 +18,7 @@ const Nike = () => {
             <NikeBanner></NikeBanner>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
                 {
-                    nikeProduct.map(nike => <div key={nike._id} className="bg-base-100 shadow-xl">
+                    nikeData.map(nike => <div key={nike._id} className="bg-base-100 shadow-xl">
                         <figure className="">
                             <img src={nike.image} alt="Shoes" className="rounded-t-lg" />
                         </figure>
@@ -34,13 +39,12 @@ const Nike = () => {
                                     <button className="rounded-md text-lg font-medium text-white bg-[#ed4242] px-5 py-2">Details</button>
                                 </Link>
                                 <Link to={`/nikeUpdate/${nike._id}`}>
-                                <button className="rounded-md text-lg font-medium text-white bg-[#ed4242] px-5 py-2">Update</button>
-                                </Link>                              
+                                    <button className="rounded-md text-lg font-medium text-white bg-[#ed4242] px-5 py-2">Update</button>
+                                </Link>
                             </div>
                         </div>
                     </div>)
                 }
-
             </div>
         </div>
     );

@@ -8,13 +8,9 @@ const NikeDetails = () => {
 
     const data = useLoaderData()
     const { name, image, description, type, price, brandName } = data
-    console.log(data)
 
     const handleDataStore = (name, type, image, brandName, price, description) => {
-
         const singleProducts = { name, type, image, brandName, price, description };
-        console.log(singleProducts);
-
         fetch("https://fashion-apparel-server-delta.vercel.app/store", {
             method: "POST",
             headers: {

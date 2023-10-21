@@ -49,33 +49,6 @@ const Home = () => {
                         </Link>
                     </div>
                 </div>
-                {/* <div>
-                    <h1>FEATURED PRODUCTS</h1>
-                    <div className="max-w-screen-xl mx-auto pb-20 grid gap-6 grid-cols-3 ">
-                        {
-                            allProducts.map(products => <div key={products._id} className="bg-base-100 rounded-lg shadow-xl">
-                                <figure className="">
-                                    <img src={products.image} alt="Shoes" className="rounded-t-lg" />
-                                </figure>
-                                <div className="p-4 space-y-2">
-
-                                    <p className="font-medium">{products.name}</p>
-
-                                    <p className="font-medium"><span className="text-red-600">${products.price}</span></p>
-                                    <div className="flex gap-8 pt-4">
-                                        <Link>
-                                            <button className="rounded-md text-lg font-medium text-white bg-[#ed4242] px-5 py-2">Details</button>
-                                        </Link>
-                                        <Link>
-                                            <button className="rounded-md text-lg font-medium text-white bg-[#ed4242] px-5 py-2">Update</button>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>)
-                        }
-
-                    </div>
-                </div> */}
             </div>
             <div className="bg-[#f2f2f2]">
                 <div className="max-w-screen-xl mx-auto text-center py-20">

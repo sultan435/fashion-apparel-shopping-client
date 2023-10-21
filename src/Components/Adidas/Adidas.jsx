@@ -1,22 +1,24 @@
 import { Link, useLoaderData } from "react-router-dom";
 import Navbar from "../../Shared/Navbar/Navbar";
 import AdidasBanner from "./AdidasBanner";
-
-
+import { useEffect, useState } from "react";
 
 const Adidas = () => {
     const allProducts = useLoaderData()
-    console.log(allProducts)
-    const adidasProduct = allProducts.filter(products => products.brandName === "ADIDAS")
-    console.log(adidasProduct)
-    return (
+    const [adidasData, setAdidasData] = useState([])
 
+    useEffect(() => {
+        const adidasProduct = allProducts.filter(products => products.brandName === "ADIDAS")
+        setAdidasData(adidasProduct)
+    }, [allProducts])
+
+    return (
         <div className="max-w-screen-xl mx-auto">
             <Navbar></Navbar>
             <AdidasBanner></AdidasBanner>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
                 {
-                    adidasProduct.map(adidas => <div key={adidas._id} className="bg-base-100 shadow-xl">
+                    adidasData.map(adidas => <div key={adidas._id} className="bg-base-100 shadow-xl">
                         <figure className="">
                             <img src={adidas.image} alt="Shoes" className="rounded-t-lg" />
                         </figure>
@@ -43,7 +45,6 @@ const Adidas = () => {
                         </div>
                     </div>)
                 }
-
             </div>
         </div>
     );

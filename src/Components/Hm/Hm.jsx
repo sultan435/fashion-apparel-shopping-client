@@ -3,17 +3,15 @@ import Navbar from "../../Shared/Navbar/Navbar";
 import HmBanner from "./HmBanner";
 import { useEffect, useState } from "react";
 
-
 const Hm = () => {
     const allProducts = useLoaderData()
-    console.log(allProducts)
     const [HmData, setData]= useState([])
-    
     
     useEffect(()=>{
         const hmProduct = allProducts.filter(products => products.brandName === "H&M")
         setData(hmProduct)
     },[allProducts])
+    
     return (
         <div className="max-w-screen-xl mx-auto">
             <Navbar></Navbar>

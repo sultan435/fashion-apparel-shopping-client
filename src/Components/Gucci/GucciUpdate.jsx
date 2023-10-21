@@ -2,10 +2,9 @@ import { useLoaderData } from "react-router-dom";
 import Navbar from "../../Shared/Navbar/Navbar";
 import Swal from 'sweetalert2'
 
-
 const GucciUpdate = () => {
     const gucci = useLoaderData()
-    const {_id, name, image, description, type, price, brandName,rating } =gucci;
+    const { _id, name, image, description, type, price, brandName, rating } = gucci;
 
     const handleUpdateGucci = event => {
         event.preventDefault();
@@ -18,28 +17,26 @@ const GucciUpdate = () => {
         const rating = form.rating.value;
         const description = form.description.value;
         const product = { name, image, brandName, price, type, rating, description }
-        console.log(product);
 
-        fetch(`https://fashion-apparel-server-delta.vercel.app/products/${_id}`,{
+        fetch(`https://fashion-apparel-server-delta.vercel.app/products/${_id}`, {
             method: "PUT",
-            headers:{
-                "Content-Type" : "application/json"
+            headers: {
+                "Content-Type": "application/json"
             },
-            body:JSON.stringify(product)
+            body: JSON.stringify(product)
         })
-        .then(res => res.json())
-        .then(data =>{
-            console.log(data)
-            if (data.modifiedCount> 0) {
-              
-                Swal.fire({
-                  title: 'Success!',
-                  text: 'Update adidas added successfully',
-                  icon: 'success',
-                  confirmButtonText: 'Ok'
-                })
-              }
-        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                if (data.modifiedCount > 0) {
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'Update adidas added successfully',
+                        icon: 'success',
+                        confirmButtonText: 'Ok'
+                    })
+                }
+            })
     }
     return (
         <div>
@@ -48,14 +45,13 @@ const GucciUpdate = () => {
                 <div className=' py-16 px-4 lg:px-28 max-w-screen-xl mx-auto '>
                     <h1 className='text-5xl text-[#374151] mb-8 text-center'>Update Gucci Product</h1>
                     <form onSubmit={handleUpdateGucci} className='mt-10'>
-                        {/* form quantity row*/}
                         <div className='flex gap-6'>
                             <div className='w-1/2'>
                                 <label >
                                     <span className="text-lg pl-1">Name</span>
                                 </label>
                                 <label>
-                                    <input type="text" name='name'defaultValue={name} className="border rounded-lg py-3 px-4 bg-white my-2 w-full" />
+                                    <input type="text" name='name' defaultValue={name} className="border rounded-lg py-3 px-4 bg-white my-2 w-full" />
                                 </label>
                             </div>
                             <div className='w-1/2'>
@@ -63,19 +59,18 @@ const GucciUpdate = () => {
                                     <span className="text-lg pl-1">Brand Name</span>
                                 </label>
                                 <label>
-                                    <input type="text" name='brandName'defaultValue={brandName} className="border rounded-lg py-3 px-4 bg-white my-2 w-full" />
+                                    <input type="text" name='brandName' defaultValue={brandName} className="border rounded-lg py-3 px-4 bg-white my-2 w-full" />
                                 </label>
                             </div>
 
                         </div>
-                        {/* form supplier row*/}
                         <div className='flex gap-6'>
                             <div className='w-1/2'>
                                 <label >
                                     <span className=" text-lg pl-1">Price</span>
                                 </label>
                                 <label>
-                                    <input type="text" name='price'defaultValue={price} className="border rounded-lg py-3 px-4 bg-white my-2 w-full" />
+                                    <input type="text" name='price' defaultValue={price} className="border rounded-lg py-3 px-4 bg-white my-2 w-full" />
                                 </label>
                             </div>
                             <div className='w-1/2'>
@@ -83,18 +78,17 @@ const GucciUpdate = () => {
                                     <span className="text-lg pl-1">Type</span>
                                 </label>
                                 <label>
-                                    <input type="text" name='type'defaultValue={type} className="border rounded-lg py-3 px-4 bg-white my-2 w-full" />
+                                    <input type="text" name='type' defaultValue={type} className="border rounded-lg py-3 px-4 bg-white my-2 w-full" />
                                 </label>
                             </div>
                         </div>
-                        {/* form category row*/}
                         <div className='flex gap-6'>
                             <div className='w-1/2'>
                                 <label >
                                     <span className=" text-lg pl-1">Image</span>
                                 </label>
                                 <label>
-                                    <input type="text" name='image'defaultValue={image} className="border rounded-lg py-3 px-4 bg-white my-2 w-full" />
+                                    <input type="text" name='image' defaultValue={image} className="border rounded-lg py-3 px-4 bg-white my-2 w-full" />
                                 </label>
                             </div>
                             <div className='w-1/2'>
@@ -102,18 +96,16 @@ const GucciUpdate = () => {
                                     <span className=" text-lg pl-1">Rating</span>
                                 </label>
                                 <label>
-                                    <input type="text" name='rating'defaultValue={rating} className="border rounded-lg py-3 px-4 bg-white my-2 w-full" />
+                                    <input type="text" name='rating' defaultValue={rating} className="border rounded-lg py-3 px-4 bg-white my-2 w-full" />
                                 </label>
                             </div>
                         </div>
-
-                        {/* form photo url row*/}
                         <div className='flex gap-6'>
                             <div className='w-full'>
                                 <label >
                                     <span className="text-lg pl-1">Short Description</span>
                                 </label>
-                                <textarea className="w-full border rounded-lg py-3 px-4 bg-white my-2" name="description"defaultValue={description} id="" cols="30" rows="3"></textarea>
+                                <textarea className="w-full border rounded-lg py-3 px-4 bg-white my-2" name="description" defaultValue={description} id="" cols="30" rows="3"></textarea>
                             </div>
                         </div>
                         <input type="submit" value="Add Product" className='py-3 mt-4 cursor-pointer rounded-md w-full border bg-[#ed4242]  text-white text-lg font-semibold' />

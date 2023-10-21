@@ -6,7 +6,6 @@ import Nike from "../Components/Nike/Nike";
 import Adidas from "../Components/Adidas/Adidas";
 import LogIn from "../Pages/LogIn/LogIn";
 import Register from "../Pages/Register/Register";
-// import PrivateRoute from "./PrivateRoute";
 import NikeDetails from "../Components/Nike/NikeDetails";
 import MyCart from "../Pages/MyCart/MyCart";
 import AdidasDetails from "../Components/Adidas/AdidasDetails";
@@ -15,14 +14,12 @@ import GucciDetails from "../Components/Gucci/GucciDetails";
 import Levis from "../Components/Levis/Levis";
 import LevisDetails from "../Components/Levis/LevisDetails";
 import Zara from "../Components/Zara/Zara";
-import ZaraDetails from "../Components/Zara/ZaraDetails";
 import Hm from "../Components/Hm/Hm";
 import HmDetails from "../Components/Hm/HmDetails";
 import UpdateAdidas from "../Components/Adidas/UpdateAdidas";
 import GucciUpdate from "../Components/Gucci/GucciUpdate";
 import NikeUpdate from "../Components/Nike/NikeUpdate";
 import HmUpdate from "../Components/Hm/HmUpdate";
-import ZaraUpdate from "../Components/Zara/ZaraUpdate";
 import LevisUpdate from "../Components/Levis/LevisUpdate";
 import Error from "../Components/Error/Error";
 import PrivateRoute from "./PrivateRoute";
@@ -85,7 +82,6 @@ const Route = createBrowserRouter([
                 path: "/updateAdidas/:id",
                 element: <PrivateRoute><UpdateAdidas></UpdateAdidas></PrivateRoute>,
                 loader:({params})=>fetch(`https://fashion-apparel-server-delta.vercel.app/products/${params.id}`)
-
             },
             {
                 path: "/gucci",
@@ -121,16 +117,6 @@ const Route = createBrowserRouter([
                 path: "/zara",
                 element: <Zara></Zara>,
                 loader: ()=>fetch("https://fashion-apparel-server-delta.vercel.app/products")
-            },
-            {
-                path: "/zaraDetails/:id",
-                element: <PrivateRoute><ZaraDetails></ZaraDetails></PrivateRoute>,
-                loader:({params})=>fetch(`https://fashion-apparel-server-delta.vercel.app/products/${params.id}`)
-            },
-            {
-                path: "/zaraUpdate/:id",
-                element: <PrivateRoute><ZaraUpdate></ZaraUpdate></PrivateRoute>,
-                loader:({params})=>fetch(`https://fashion-apparel-server-delta.vercel.app/products/${params.id}`)
             },
             {
                 path: "/hm",

@@ -6,14 +6,12 @@ import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from 'sweetalert2'
 import { updateProfile } from "firebase/auth";
 
-
 const Register = () => {
     const [registerError, setRegisterError] = useState('')
     const [success, setSuccess] = useState('')
     const [showPassword, setShowPassword] = useState(false)
 
-    const {registerUser} = useContext(AuthContext)
-    console.log(registerUser)
+    const { registerUser } = useContext(AuthContext)
 
     const handleUserRegister = e => {
         e.preventDefault()
@@ -21,7 +19,6 @@ const Register = () => {
         const name = form.name.value;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(name,email,password);
 
         setRegisterError("")
         setSuccess("")
@@ -39,35 +36,34 @@ const Register = () => {
             return;
         }
 
-        registerUser(email,password)
-        .then(result =>{
-            console.log(result.user)
-            setSuccess('user created successfully')
-            Swal.fire({
-                title: 'success!',
-                text: 'You clicked the button!',
-                icon: 'success',
-                confirmButtonText: 'ok'
-              })
+        registerUser(email, password)
+            .then(result => {
+                console.log(result.user)
+                setSuccess('user created successfully')
+                Swal.fire({
+                    title: 'success!',
+                    text: 'You clicked the button!',
+                    icon: 'success',
+                    confirmButtonText: 'ok'
+                })
 
-              updateProfile(result.user, {
-                displayName: name,
-                photoURL: "https://example.com/jane-q-user/profile.jpg"
-              })
-              .then(() => console.log("profile update"))
-              .catch()
+                updateProfile(result.user, {
+                    displayName: name,
+                    photoURL: "https://example.com/jane-q-user/profile.jpg"
+                })
+                    .then(() => console.log("profile update"))
+                    .catch()
 
-        })
-        .catch(error =>{
-            console.error(error, "email already in used");
-            setRegisterError('email already in used')
-        })
+            })
+            .catch(error => {
+                console.error(error, "email already in used");
+                setRegisterError('email already in used')
+            })
     }
     return (
         <div>
             <Navbar></Navbar>
             <div className="bg-[#f2f2f2] py-24 px-3">
-
                 <div className="md:w-3/4 lg:w-1/2 mx-auto bg-white p-10 rounded-lg">
                     <div className="text-center mb-12">
                         <h1 className="text-4xl text-[#403F3F] font-semibold">Register</h1>
@@ -111,7 +107,6 @@ const Register = () => {
                                 <div className="relative">
                                     <input
                                         type={showPassword ? "text" : "password"}
-                                      
                                         name="password"
                                         placeholder="Password"
                                         className="border rounded-lg py-3 px-4 bg-white my-2 w-full" required />
@@ -139,7 +134,6 @@ const Register = () => {
                             }
                         </div>
                     </form>
-
                     <p className="mt-7 text-center text-[#403F3F] font-semibold">Have already an account ? <Link className="text-[#ed4242]" to="/login">Login</Link></p>
                 </div>
             </div>

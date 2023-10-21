@@ -1,20 +1,25 @@
 import { Link, useLoaderData } from "react-router-dom";
 import Navbar from "../../Shared/Navbar/Navbar";
 import LevisBanner from "./LevisBanner";
+import { useEffect, useState } from "react";
 
 
 const Levis = () => {
     const allProducts = useLoaderData()
-    console.log(allProducts)
-    const levisProduct = allProducts.filter(products => products.brandName === "LEVI'S")
-    console.log(levisProduct)
+    const [levisData, setLevisData] = useState([])
+
+    useEffect(() => {
+        const levisProduct = allProducts.filter(products => products.brandName === "LEVI'S")
+        setLevisData(levisProduct)
+    }, [allProducts])
+
     return (
         <div className="max-w-screen-xl mx-auto">
             <Navbar></Navbar>
             <LevisBanner></LevisBanner>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
                 {
-                    levisProduct.map(levis => <div key={levis._id} className="bg-base-100 shadow-xl">
+                    levisData.map(levis => <div key={levis._id} className="bg-base-100 shadow-xl">
                         <figure className="">
                             <img src={levis.image} alt="Shoes" className="rounded-t-lg" />
                         </figure>
@@ -37,12 +42,10 @@ const Levis = () => {
                                 <Link to={`/levisUpdate/${levis._id}`}>
                                     <button className="rounded-md text-lg font-medium text-white bg-[#ed4242] px-5 py-2">Update</button>
                                 </Link>
-
                             </div>
                         </div>
                     </div>)
                 }
-
             </div>
         </div>
     );
