@@ -63,13 +63,13 @@ const LogIn = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <div className="bg-[#f2f2f2] py-24 px-3">
-                <div className="md:w-3/4 lg:w-1/2 mx-auto bg-white p-10 rounded-lg">
+            <div className="bg-[#f2f2f2] py-24">
+                <div className="md:w-3/4 lg:w-1/2 mx-auto bg-white px-4 md:px-10 lg:px-12 py-16 rounded-lg">
                     <div className="text-center mb-12">
                         <h1 className="text-4xl text-[#403F3F] font-semibold">LOGIN</h1>
                     </div>
                     <form onSubmit={handleUserLogin} >
-                        <div className="px-3 mt-8">
+                        <div className="mt-8">
 
                             <div className="">
                                 <label>
@@ -115,13 +115,13 @@ const LogIn = () => {
                     </div>
                     <p className="text-center">OR</p>
                     <div className="">
-                        <button onClick={handleGoogleLogin} className="btn w-full border-black my-3 px-6">
+                        <button onClick={handleGoogleLogin} className="btn w-full border-black my-3">
                             <FaGoogle></FaGoogle>
                             Sign in with Google
                         </button>
                     </div>
 
-                    <p className="mt-7 text-center text-[#403F3F] font-semibold">Don’t Have An Account ? <Link className="text-[#ed4242]" to="/register">Register</Link></p>
+                    <p className="text-center text-[#403F3F] font-semibold">Don’t Have An Account ? <Link className="text-[#ed4242]" to="/register">Register</Link></p>
                 </div>
             </div>
         </div>

@@ -43,8 +43,8 @@ const AddProducts = () => {
                 <div className=' py-16 px-4 lg:px-28 max-w-screen-xl mx-auto '>
                     <h1 className='text-5xl text-[#374151] mb-8 text-center'>Add New Product</h1>
                     <form onSubmit={handleProduct} className='mt-10'>
-                        <div className='flex gap-6'>
-                            <div className='w-1/2'>
+                        <div className='lg:flex md:flex gap-6'>
+                            <div className='md:w-1/2 lg:w-1/2'>
                                 <label >
                                     <span className="text-lg pl-1">Name</span>
                                 </label>
@@ -52,7 +52,7 @@ const AddProducts = () => {
                                     <input type="text" name='name' placeholder="Enter Name" className="border rounded-lg py-3 px-4 bg-white my-2 w-full" />
                                 </label>
                             </div>
-                            <div className='w-1/2'>
+                            <div className='md:w-1/2 lg:w-1/2'>
                                 <label >
                                     <span className="text-lg pl-1">Brand Name</span>
                                 </label>
@@ -61,8 +61,8 @@ const AddProducts = () => {
                                 </label>
                             </div>
                         </div>
-                        <div className='flex gap-6'>
-                            <div className='w-1/2'>
+                        <div className='lg:flex md:flex gap-6'>
+                            <div className='md:w-1/2 lg:w-1/2'>
                                 <label >
                                     <span className=" text-lg pl-1">Price</span>
                                 </label>
@@ -70,7 +70,7 @@ const AddProducts = () => {
                                     <input type="text" name='price' placeholder="Enter Price" className="border rounded-lg py-3 px-4 bg-white my-2 w-full" />
                                 </label>
                             </div>
-                            <div className='w-1/2'>
+                            <div className='md:w-1/2 lg:w-1/2'>
                                 <label >
                                     <span className="text-lg pl-1">Type</span>
                                 </label>
@@ -79,8 +79,8 @@ const AddProducts = () => {
                                 </label>
                             </div>
                         </div>
-                        <div className='flex gap-6'>
-                            <div className='w-1/2'>
+                        <div className='lg:flex md:flex gap-6'>
+                            <div className='md:w-1/2 lg:w-1/2'>
                                 <label >
                                     <span className=" text-lg pl-1">Image</span>
                                 </label>
@@ -88,7 +88,7 @@ const AddProducts = () => {
                                     <input type="text" name='image' placeholder="Enter Image Url" className="border rounded-lg py-3 px-4 bg-white my-2 w-full" />
                                 </label>
                             </div>
-                            <div className='w-1/2'>
+                            <div className='md:w-1/2 lg:w-1/2'>
                                 <label >
                                     <span className=" text-lg pl-1">Rating</span>
                                 </label>
@@ -97,7 +97,7 @@ const AddProducts = () => {
                                 </label>
                             </div>
                         </div>
-                        <div className='flex gap-6'>
+                        <div className=''>
                             <div className='w-full'>
                                 <label >
                                     <span className="text-lg pl-1">Short Description</span>

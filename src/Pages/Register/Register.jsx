@@ -64,7 +64,7 @@ const Register = () => {
         <div>
             <Navbar></Navbar>
             <div className="bg-[#f2f2f2] py-24 px-3">
-                <div className="md:w-3/4 lg:w-1/2 mx-auto bg-white p-10 rounded-lg">
+                <div className="md:w-3/4 lg:w-1/2 mx-auto bg-white px-4 md:px-10 lg:px-12 py-16 rounded-lg">
                     <div className="text-center mb-12">
                         <h1 className="text-4xl text-[#403F3F] font-semibold">Register</h1>
                     </div>
