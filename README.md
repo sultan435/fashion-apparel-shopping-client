@@ -1,4 +1,4 @@
-Live side: https://pet-adoption-project-ac299.web.app/
+Live side: https://prectise2-user-email-password.firebaseapp.com/
 
 Technology: 
 - ReactJs
@@ -9,11 +9,5 @@ Technology:
 - MongoDB
 - ExpressJs
 - React-Router
-- Lottie-react
-- Moment
 - Sweetalert2
-- React-Scroll
-- React-hook-form,Axios
-- Tanstack-query
-- stripe
-
+- React-hook-form
